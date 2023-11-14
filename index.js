@@ -177,14 +177,14 @@ for (let i = 0; i < finances.length; i++) {
         difference_in_value = money_value - previous_month
         monthly_difference.push(difference_in_value);
 
-        // Itteration in positive 
+   
 
         if (difference_in_value > biggest_profit_data) {
 
             biggest_profit_value = difference_in_value
             biggest_profit_data = count
         }
-        // Itteration in negative 
+     
         else if (difference_in_value < biggest_loss_data) {
 
             biggest_loss_value = difference_in_value
