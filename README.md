@@ -1,7 +1,6 @@
 # Console-Finances-W4
 
 
-Description
 This JavaScript piecs of work shows the results of net amount of profits and losss, a well as the average of the changes in profit and loss. 
 
 
