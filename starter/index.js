@@ -24,7 +24,7 @@ var finances = [
   ['Nov-2011', 132003],
   ['Dec-2011', 309978], // 177975
   ['Jan-2012', -755566],
-  ['Feb-2012', 1170593], // 415027
+  ['Feb-2012', 1170593], // 1926159
   ['Mar-2012', 252788],
   ['Apr-2012', 1151518], // 898730
   ['May-2012', 817256],
@@ -61,44 +61,74 @@ var finances = [
   ['Dec-2014', 988505], // 409837
   ['Jan-2015', 1139715],
   ['Feb-2015', 1029471], // -110244
-  ['Mar-2015', 687533], // -1212159
-  ['Apr-2015', -524626],
+  ['Mar-2015', 687533], 
+  ['Apr-2015', -524626],// -1212159
   ['May-2015', 158620],
-  ['Jun-2015', 87795],
+  ['Jun-2015', 87795], // -70825
   ['Jul-2015', 423389],
-  ['Aug-2015', 840723],
+  ['Aug-2015', 840723], // 417334
   ['Sep-2015', 568529],
-  ['Oct-2015', 332067],
+  ['Oct-2015', 332067], // -236462
   ['Nov-2015', 989499],
-  ['Dec-2015', 778237],
+  ['Dec-2015', 778237], // -211262
   ['Jan-2016', 650000],
-  ['Feb-2016', -1100387],
+  ['Feb-2016', -1100387], // -1750387
   ['Mar-2016', -174946],
-  ['Apr-2016', 757143],
+  ['Apr-2016', 757143], // 582197
   ['May-2016', 445709],
-  ['Jun-2016', 712961],
+  ['Jun-2016', 712961], // 267252
   ['Jul-2016', -1163797],
-  ['Aug-2016', 569899],
+  ['Aug-2016', 569899], // 1733696
   ['Sep-2016', 768450],
-  ['Oct-2016', 102685],
+  ['Oct-2016', 102685], // -665765
   ['Nov-2016', 795914],
-  ['Dec-2016', 60988],
+  ['Dec-2016', 60988], // -734926
   ['Jan-2017', 138230],
-  ['Feb-2017', 671099],
+  ['Feb-2017', 671099], // 532869
 ];
 
 
+// var 
+
+
+// console.log( finances [24]-[25]);
+
+// console.log('Finance length ' + [finances.length]);
+
+// console.log('Total Months' + [finances.total]); 
 
 
 
-console.log( 'finance Analysis');
-
-console.log( 'Total month: ' + finances.length);
-
-console.log( 'Total: ' + finances.total);
+// var GreatestIncrease -(Feb-2012 1926159);
 
 
-// set out all variables for the project 
+
+// console.log (GreatestIncrease)
+
+
+
+
+
+
+// console.log( 'finance Analysis');
+
+// console.log( 'Total month: ' + finances.length);
+
+// console.log( 'Total: ' + finances.total);
+
+
+
+
+
+// Total Months
+// Total
+// Average Change
+// Greatest Increase in Profits/Losses
+// Greatest Decrease in Profits/Losses
+
+
+
+
 var months = finances.length;
 
 var profit = 0;
@@ -113,7 +143,7 @@ var difference_in_value = 0;
 var monthly_difference_calculation = 0;
 
 
-var biggestprofitvalue = 0;
+var biggest_profit_value = 0;
 var biggest_profit_data = 0;
 var biggest_loss_value = 0;
 var biggest_loss_data = 0;
@@ -122,7 +152,7 @@ var biggest_profit
 var biggest_loss
 
 var analysis
-var count =0;
+var count = 0;
 
 
 for (let i = 0; i < finances.length; i++) {
@@ -194,9 +224,10 @@ analysis = 'Financial Analysis' + '\n'
     + 'Total Months: ' + months + '\n'
     + 'Total: £' + total + '\n'
     + 'Average Change: -£' + (average_change * -1) + '\n'
-    + 'Greatest Increase: ' + biggest_profit[0] + ' - there was an increase of: £' + biggest_profit_value + '\n'
-    + 'Greatest Decrease: ' + biggest_loss[0] + ' - there was a decrease of: -£' + (biggest_loss_value * -1)
+    + 'Greatest Increase: ' + biggest_profit[0] + ' With increase of: £' + biggest_profit_value + '\n'
+    + 'Greatest Decrease: ' + biggest_loss[0] + ' - With decrease of: -£' + (biggest_loss_value * -1)
     ;
 
 
 console.log(analysis);
+
